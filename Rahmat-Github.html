@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", "Open Sans", Arial, sans-serif;
+      background: #ffffff;
+      color: #6b6b6b;
+    }
+
+    /* Dua kolom: foto di kiri, teks di kanan */
+    .halaman {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .foto {
+      width: 40%;
+      height: 100vh;
+      object-fit: cover;
+      position: sticky;
+      top: 0;
+    }
+
+    .teks {
+      flex: 1;
+      padding: 2rem 2.5rem;
+    }
+
+    .teks p {
+      font-size: clamp(1.6rem, 2.9vw, 3.4rem);
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    .jarak {
+      margin-top: 2.4em;
+    }
+
+    @media (max-width: 700px) {
+      .halaman {
+        flex-direction: column;
+      }
+      .foto {
+        width: 100%;
+        height: 60vh;
+        position: static;
+      }
+      .teks {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="halaman">
+    <img class="foto" src="https://cdn.phototourl.com/member/2026-10-15-9b060597-1dd9-4672-b484-c91145be6382.jpg" alt="Foto Mochi, kucing putih bermata biru">
+
+    <section class="teks">
+      <p>This is my pages</p>
+      <p>My name is Rahmat Haji</p>
+      <p>And this is my cat Mochi</p>
+      <p class="jarak">He is little disturbing and naughty</p>
+    </section>
+  </main>
+</body>
+</html>
